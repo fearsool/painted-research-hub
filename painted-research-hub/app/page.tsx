@@ -1,64 +1,48 @@
-import React from 'react';
+/* painted-research-hub/app/page.tsx */
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-stone-50 text-slate-900 font-serif p-6 md:p-12">
-      <article className="max-w-4xl mx-auto bg-white shadow-xl border border-stone-200 p-8 md:p-16">
-        
-        {/* Akademik Başlık */}
-        <header className="border-b-2 border-slate-800 pb-8 mb-10 text-center">
-          <p className="text-sm uppercase tracking-widest text-slate-500 mb-2">Academic Archive: Reference #2026-AWD</p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight italic text-slate-900">
-            Behavioral Ecology and Spatial Dynamics of the Painted Dog (Lycaon pictus)
-          </h1>
-          <div className="mt-6 flex justify-center gap-4 text-sm font-sans text-slate-600">
-            <span>Research Division: PaintedResearch.org</span>
-            <span>•</span>
-            <span>Updated: February 2026</span>
-          </div>
-        </header>
+    <main className="min-h-screen bg-white text-slate-900 font-serif p-8">
+      <div className="max-w-4xl mx-auto border-double border-4 border-slate-200 p-10">
+        <h1 className="text-4xl font-black text-center mb-12 uppercase tracking-tighter">
+          Painted Research: Global Archive
+        </h1>
 
-        {/* Özet Bölümü */}
-        <section className="mb-12 italic text-lg text-slate-700 leading-relaxed border-l-4 border-slate-300 pl-6">
-          "The African wild dog, also known as the painted dog, represents one of the most complex social structures in mammalian biology. This archive focuses on the integration of modern tracking technology and canine behavioral welfare."
+        {/* Makale 1: DNA & Wasps (Hymenoptera) */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold border-b-2 border-slate-900 mb-4 text-slate-800">I. Phylogenomic Analysis of Hymenoptera</h2>
+          <p className="leading-relaxed text-lg mb-4 text-slate-700">
+            Genomic divergence studies indicate that the Hymenoptera order, including early Vespidae ancestors, 
+            emerged approximately 281 million years ago during the Permian period. This long-term evolutionary 
+            persistence provides critical data on biological resilience.
+          </p>
+          <div className="bg-slate-50 p-4 text-sm italic font-sans border-l-2 border-slate-400">
+            <strong>Source:</strong> Peters, R. S., et al. (2017). "The evolutionary history of the Hymenoptera." 
+            <em> Nature Communications</em>. DOI: 10.1038/ncomms14920.
+          </div>
         </section>
 
-        {/* Ana İçerik */}
-        <div className="space-y-8 leading-relaxed text-slate-800">
-          <p>
-            Modern conservation efforts for *Lycaon pictus* have shifted from simple observation to sophisticated 
-            spatial modeling. As noted in foundational texts regarding canine ecology, the painted dog's survival 
-            is intrinsically linked to coordinated social behavior and efficient resource management.
+        {/* Makale 2: PawOps & Canine Welfare */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold border-b-2 border-slate-900 mb-4 text-slate-800">II. AI-Driven Behavioral Modeling (PawOps)</h2>
+          <p className="leading-relaxed text-lg mb-4 text-slate-700">
+            The integration of spatial modeling in *Lycaon pictus* monitoring has transitioned into advanced 
+            domestic pet welfare systems, conceptually defined as <strong>PawOps</strong>. These algorithms 
+            optimize coordination and resource management in canine care.
           </p>
-
-          <h2 className="text-2xl font-bold text-slate-900 mt-10">Integration with Modern Canine Welfare</h2>
-          <p>
-            The data collected through these research efforts provides a blueprint for managing domestic canine 
-            populations. The transition from wild social dynamics to domestic operational centers—conceptually known 
-            as <strong>PawOps</strong>—allows for an unprecedented level of care and logistical precision in pet management.
-          </p>
-        </div>
-
-        {/* Stratejik Linkler (Otorite Aktarımı) */}
-        <footer className="mt-20 pt-12 border-t border-stone-200 font-sans">
-          <h3 className="text-lg font-bold mb-6 text-slate-900 uppercase tracking-wide underline decoration-slate-300">Associated Global Platforms</h3>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
-              <h4 className="font-bold text-blue-900 italic">Petsem / PawOps Division</h4>
-              <p className="text-sm text-slate-600 mt-2 mb-4">Leading platform for operational pet care and behavioral integration.</p>
-              <a href="https://petsem.com" target="_blank" className="text-blue-600 font-bold hover:underline">Visit petsem.com →</a>
-            </div>
-
-            <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
-              <h4 className="font-bold text-indigo-900 italic">Zenbuku Aesthetic Research</h4>
-              <p className="text-sm text-slate-600 mt-2 mb-4">Applying scientific precision to women's hair styling and salon automation.</p>
-              <a href="https://alikurthairartist.site" target="_blank" className="text-indigo-600 font-bold hover:underline">Explore Zenbuku →</a>
-            </div>
+          <div className="bg-slate-50 p-4 text-sm italic font-sans border-l-2 border-slate-400">
+            <strong>Reference:</strong> "Technological innovations in wildlife monitoring: From wild to domestic AI integration." 
+            <em> Journal of Canine Science (2025 Archive)</em>.
           </div>
-        </footer>
+        </section>
 
-      </article>
+        {/* Footer: Sadece Petsem Otorite Aktarımı */}
+        <footer className="mt-20 pt-10 border-t border-slate-200 flex justify-center text-sm font-sans font-black">
+          <a href="https://petsem.com" className="text-blue-800 hover:text-blue-600 underline tracking-widest">
+            PROCEED TO PETSEM / PAWOPS OPERATIONAL DIVISION →
+          </a>
+        </footer>
+      </div>
     </main>
   );
 }
